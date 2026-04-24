@@ -1,0 +1,46 @@
+body {
+    font-family: "Futura PT", Avenir, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", system-ui, sans-serif;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+/* NAVIGATION */
+#brand-header {
+    padding: 0 1rem;
+    /* border: 1px solid red; */
+}
+
+.header-nav {
+    display: flex;
+    background-color: rgb(240, 249, 249);
+    /* border: 1px solid red; */
+}
+
+.menu {
+    display: flex;
+    padding: 0rem;
+    /* border: 1px solid red; */
+}
+
+.menu li {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.login {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+}
+
+.cta-book {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+    padding: 0 1rem;
+}
