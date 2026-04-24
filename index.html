@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sound Wave - Studio Rent</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/navbar.css" />
+    <link rel="stylesheet" href="./assets/styles/hero.css" />
   </head>
   <body>
     <header>
@@ -30,11 +32,103 @@
           <a href="">Book</a>
         </div>
       </div>
-      <hr />
     </header>
-    <section class="hero"></section>
+    <section class="hero">
+      <div class="hero-container">
+        <div class="item-one">
+          <h1>Connect. Create. Record.</h1>
+        </div>
+        <div class="item-two">
+          <p>
+            Find music studios, collaborate with producers, and bring your sound
+            to life — anywhere in the world.
+          </p>
+        </div>
+        <div class="item-three">
+          <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <img src="./assets/images/carousel/one.png" />
+                  <a href="#carousel__slide4" class="carousel__prev"
+                    >Go to last slide</a
+                  >
+                  <a href="#carousel__slide2" class="carousel__next"
+                    >Go to next slide</a
+                  >
+                </div>
+              </li>
+
+              <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <img src="./assets/images/carousel/two.png" />
+                  <a href="#carousel__slide1" class="carousel__prev"
+                    >Go to previous slide</a
+                  >
+                  <a href="#carousel__slide3" class="carousel__next"
+                    >Go to next slide</a
+                  >
+                </div>
+              </li>
+
+              <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <img src="./assets/images/carousel/three.png" />
+                  <a href="#carousel__slide2" class="carousel__prev"
+                    >Go to previous slide</a
+                  >
+                  <a href="#carousel__slide4" class="carousel__next"
+                    >Go to next slide</a
+                  >
+                </div>
+              </li>
+
+              <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide3" class="carousel__prev"
+                    >Go to previous slide</a
+                  >
+                  <a href="#carousel__slide1" class="carousel__next"
+                    >Go to first slide</a
+                  >
+                </div>
+              </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a
+                    href="#carousel__slide1"
+                    class="carousel__navigation-button"
+                  ></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a
+                    href="#carousel__slide2"
+                    class="carousel__navigation-button"
+                  ></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a
+                    href="#carousel__slide3"
+                    class="carousel__navigation-button"
+                  ></a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a
+                    href="#carousel__slide4"
+                    class="carousel__navigation-button"
+                  ></a>
+                </li>
+              </ol>
+            </aside>
+          </section>
+        </div>
+      </div>
+    </section>
     <section class="latest-studios"></section>
     <section class="sucess-story"></section>
     <footer></footer>
+    <script src="script.js"></script>
   </body>
 </html>
