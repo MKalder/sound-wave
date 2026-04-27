@@ -27,3 +27,19 @@ document.querySelector(".prev").addEventListener("click", () => {
         goToSlide(index - 1);
     }
 });
+
+
+// BURGER-MENU
+
+const burger = document.querySelector(".burger");
+const nav = document.querySelector(".navigation");
+
+burger.addEventListener("click", () => {
+    nav.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target) && !burger.contains(e.target)) {
+        nav.classList.remove("active");
+    }
+});
