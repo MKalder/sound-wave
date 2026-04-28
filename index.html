@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
     <link rel="stylesheet" href="./assets/styles/navbar.css" />
     <link rel="stylesheet" href="./assets/styles/hero.css" />
+    <link rel="stylesheet" href="./assets/styles/how-it-works.css" />
   </head>
   <body>
     <header>
+      <!-- NAVIGATION BAR -->
       <div class="header-nav">
-        <img
+        <a href="#" ><img
           id="brand-header"
           src="./assets/svg/brandlogo-headsvg.svg"
           alt="Sound Wave logo"
         />
-        <nav>
+        </a>
+        <nav class="navigation">
           <ul class="menu">
+            <li class="mobile-only"><a href="#">
+              <svg class="login-icon" viewBox="0 0 24 24" width="24">
+                <path
+                d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" fill="black"/>
+              </svg>
+              </a>
+            </li>
             <li><a href="#">Studios</a></li>
             <li><a href="#">Explore</a></li>
             <li><a href="#">Community</a></li>
@@ -25,11 +35,28 @@
             <li><a href="#">About</a></li>
           </ul>
         </nav>
-        <a class="login" href="">Login</a>
-        <a class="cta-book" href="">Book</a>
+        <a class="login desktop-only" href="#">
+
+  <svg class="login-icon" viewBox="0 0 24 24" width="24">
+    <path
+      d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"
+      fill="black"
+    />
+  </svg>
+      </a>
+
+        <a class="cta-book" href="#">Book</a>
+         <!-- BURGER MENU-->
+        <button class="burger" aria-label="Menu öffnen">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
-
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+    <!-- HERO -->
     <section class="hero">
       <div class="wording item">
         <div class="headline">
@@ -41,6 +68,7 @@
           Find music studios, collaborate with producers, and bring your sound
           to life — anywhere in the world.
         </p>
+        <a class="cta-book-hero" href="">Book</a>
       </div>
       <div class="carousel item">
          <button class="nav prev">
@@ -56,18 +84,29 @@
         <div class="carousel__track">
           
           <div class="slide">
-            <img src="./assets/images/carousel/two.png" />
+            <img src="./assets/images/carousel/one.png" />
           </div>
           <div class="slide">
             <img src="./assets/images/carousel/two.png" />
           </div>
           <div class="slide">
-            <img src="./assets/images/carousel/two.png" />
+            <img src="./assets/images/carousel/eight.png" />
           </div>
           <div class="slide">
-            <img src="./assets/images/carousel/two.png" />
+            <img src="./assets/images/carousel/five.png" />
           </div>
-          
+          <div class="slide">
+            <img src="./assets/images/carousel/three.png" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/carousel/four.png" />
+          </div>
+          <div class="slide">
+            <img src="./assets/images/carousel/six.png" />
+          </div>
+           <div class="slide">
+            <img src="./assets/images/carousel/seven.png" />
+          </div>
         </div>
          <button class="nav next">
             <svg viewBox="0 0 24 24" width="32" style="transform: scaleX(-1)">
@@ -78,10 +117,32 @@
                 stroke-width="2"
               />
             </svg>
-       
       </div>
     </section>
-    <section class="latest-studios"></section>
+    <h2>How it works</h2>
+    <section class="how-it-works">
+      <div class="steps">
+        <div class="step-number one">1</div>
+        <div class="explanation">
+          <div class="step-headline">Discover Studios</div>
+          <div class="step-description">Filter by location, gear, vibe</div>
+        </div>
+        </div>
+       <div class="steps">
+        <div class="step-number two">2</div>
+        <div class="explanation">
+          <div class="step-headline">Book Instantly</div>
+          <div class="step-description">Real-time availability, no email needed</div>
+        </div>
+        </div>
+        <div class="steps">
+          <div class="step-number three">3</div>
+          <div class="explanation">
+          <div class="step-headline">Record & Collaborate</div>
+          <div class="step-description">Walk in and start creating</div>
+        </div>
+      </div>
+    </section>
     <section class="sucess-story"></section>
     <footer></footer>
     <script src="script.js"></script>
