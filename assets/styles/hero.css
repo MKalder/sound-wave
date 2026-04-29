@@ -1,0 +1,177 @@
+.hero {
+    display: flex;
+    margin: 1rem 1rem;
+    background: linear-gradient(to bottom,
+            #daf6ed,
+            #f0f9f9);
+    padding: clamp(1rem, 5vw, 5rem);
+}
+
+.wording {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wording p {
+    font-size: clamp(1rem, 1.5vw, 1.4rem);
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.item {
+    flex: 1;
+    min-width: 0;
+    padding: 1rem
+}
+
+.cta-book-hero {
+    display: inline-block;
+    width: fit-content;
+    max-width: 100%;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primary);
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: clamp(1rem, 1.5vw, 1.8rem);
+    margin-bottom: 1rem;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.connect,
+.create,
+.record {
+    font-size: 2.5rem;
+    font-weight: 500;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.connect::after,
+.create::after,
+.record::after {
+    content: "";
+    position: absolute;
+    left: 0.2em;
+    bottom: 0.2em;
+    width: 95%;
+    height: 0.7em;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+
+.connect::after {
+    background: var(--danger);
+}
+
+.create::after {
+    background: var(--accent-yellow);
+}
+
+.record::after {
+    background: var(--accent-green);
+}
+
+.headline span {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+
+.record {
+    display: inline-block;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel__track {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    overflow-y: hidden;
+
+}
+
+.slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .carousel__track {
+        scroll-behavior: smooth;
+    }
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--nav-background);
+    color: var(--bg-main);
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 0.5rem;
+        margin: 1rem auto;
+        width: 90vw;
+    }
+
+    .item {
+        flex: 0 0 100%;
+        padding: 0;
+    }
+
+    .cta-book-hero {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+
+
+}
