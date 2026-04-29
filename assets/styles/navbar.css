@@ -1,0 +1,158 @@
+/* NAVIGATION */
+#brand-header {
+    width: 3rem;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-main);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.menu {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 2rem;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.login {
+    margin-left: auto;
+}
+
+.cta-book {
+    display: flex;
+}
+
+.btn-primary {
+    margin-left: 1rem;
+    background: var(--primary);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.desktop-only {
+    display: inline-block;
+}
+
+.login-text {
+    display: none;
+}
+
+.mobile-only {
+    display: none;
+}
+
+
+/* Burger default hidden */
+
+.burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+}
+
+@media (max-width: 768px) {
+
+    /* Burger sichtbar */
+    .burger {
+        display: flex;
+    }
+
+    /* Desktop-Elemente ausblenden */
+    .menu {
+        display: none;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .cta-book {
+        margin-left: auto;
+    }
+
+    /* NAV Overlay */
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: white;
+        padding: 2rem;
+        transition: right 0.3s ease;
+        z-index: 1000;
+    }
+
+    .navigation.active {
+        right: 0;
+    }
+
+    .navigation .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .overlay {
+        position: fixed;
+        inset: 0;
+        background: var(--nav-background);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+        z-index: 999;
+    }
+
+    .overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
