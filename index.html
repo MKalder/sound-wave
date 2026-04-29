@@ -119,20 +119,40 @@
             </svg>
       </div>
     </section>
-    <h2>How it works</h2>
-    <section class="how-it-works">
+    <!-- HOW IT WORKS -->
+    <section class="how-it-works" aria-hidden="true">
+      <span class="pill">How it works</span>
+      <h2>From click to <span>first take</span> — in minutes</h2>
+      <p>No paperwork, no emails, no waiting. Search, book, and start recording.</p>
+      <div class="step-flex">
       <div class="steps">
+        <!-- STEP ONE -->
         <div class="step-number one">1</div>
-        <div class="explanation">
-          <div class="step-headline">DISCOVER STUDIOS</div>
-          <div class="step-description">Filter by location, gear, vibe</div>
+        <svg
+              class="step-icon magnifying-glass"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+              <path d="M11 8v6M8 11h6" />
+            </svg>
+      
+          <h3 class="step-headline">DISCOVER STUDIOS</h3>
+          <p class="step-description">Filter by location, gear, vibe. Reviews and photos give you an honest picture.</p>
+           <span class="step-tag" style="color: var(--color-primary)">
+              <span class="step-tag-dot"></span> Location · Gear · Price
+            </span>
         </div>
-        </div>
-        <img
-          id="connector"
-          src="./assets/svg/brandlogo-headsvg.svg"
-          alt="Sound Wave logo"
-        />
+       
+        <div class="step-connector" aria-hidden="true">
+            <div class="connector-line"></div>
+          </div>
+
+          <!-- STEP TWO -->
        <div class="steps">
         <div class="step-number two">2</div>
         <div class="explanation">
@@ -140,16 +160,15 @@
           <div class="step-description">Real-time availability, no email needed</div>
         </div>
         </div>
-        <img
-          id="connector"
-          src="./assets/svg/brandlogo-headsvg.svg"
-          alt="Sound Wave logo"
-        />
+        
+
+        <!-- STEP THREE -->
         <div class="steps">
           <div class="step-number three">3</div>
           <div class="explanation">
           <div class="step-headline">RECORD & COLLABORATE</div>
           <div class="step-description">Walk in and start creating</div>
+        </div>
         </div>
       </div>
     </section>
