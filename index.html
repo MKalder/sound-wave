@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/styles/navbar.css" />
     <link rel="stylesheet" href="./assets/styles/hero.css" />
     <link rel="stylesheet" href="./assets/styles/how-it-works.css" />
+    <link rel="stylesheet" href="./assets/styles/featured-studios.css"/>
   </head>
   <body>
     <header>
@@ -233,26 +234,91 @@
             </span>
           </div>
       </div>
-      <div class="section-cta">
-          <p>Bereit für deinen nächsten Hit?</p>
-          <a href="#" class="btn-primary">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2.5"
-              aria-hidden="true"
-            >
-              <circle cx="8" cy="18" r="4" />
-              <path d="M12 18V2l7 4" />
-            </svg>
-            Jetzt Studio buchen
-          </a>
-        </div>
+      <div class="section-divider"></div>
     </section>
-    <section class="sucess-story"></section>
+    <!-- FEATURED STUDIOS -->
+    <section class="featured-studios">
+      <span class="pill">Featured Studios</span>
+      <h2>Top-rated spaces, <span>ready to book</span></h2>
+      <p>Discover professional studios trusted by artists, producers, and creators — ready when inspiration hits.</p>
+      <!-- FEATURED CARDS -->
+       <div class="featured-container">
+        <!-- FIRST CARD -->
+        <article class="featured-card featured-card--first">
+          <figure class="studio-card__image">
+            <img 
+              src="./assets/images/featured_studios/berlin/berlin_three.jpg" 
+              alt="Innenansicht des Recording Studios Breakdown in Berlin"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <p class="featured-rating-pill"><span>★</span> 4.8</p>
+            <p class="featured-costs-per-hour-pill">20€/h</p>
+          </figure>
+          <p class="featured-location"><span class="featured-icon-location" aria-hidden="true">📍</span>Berlin</p>
+          <h3 class="featured-headline">Breakdown One</h3>
+          <ul class="featured-pills">
+            <li>Vocal Booth</li>
+            <li>Control Room</li>
+            <li>Acoustic Treatment</li>
+            <li>Soundproof</li>
+            <li>Live Room</li>
+          </ul>
+          <a class="featured-studio-btn" href="#">View Studio</a>
+        </article>
+        <!-- SECOND CARD -->
+        <article class="featured-card featured-card--secondary">
+          <figure class="studio-card__image">
+            <img 
+              src="./assets/images/featured_studios/bangkok/one.png" 
+              alt="Innenansicht des Recording Studios Breakdown in Berlin"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <p class="featured-rating-pill"><span>★</span> 5.0</p>
+            <p class="featured-costs-per-hour-pill">15€/h</p>
+          </figure>
+          <p class="featured-location"><span class="featured-icon-location" aria-hidden="true">📍</span>Bangkok</p>
+          <h3 class="featured-headline">Dynamite Box</h3>
+          <ul class="featured-pills">
+            <li>Control Room</li>
+            <li>Floating Floor</li>
+            <li>High-End Audio Interface</li>
+            <li>Multi-Track Recording</li>
+            <li>Mastering Assistance</li>
+          </ul>
+          <a class="featured-studio-btn" href="#">View Studio</a>
+        </article>
+        <!-- THIRD CARD -->
+        <article class="featured-card featured-card--third">
+          <figure class="studio-card__image">
+            <img 
+              src="./assets/images/featured_studios/london/three.png" 
+              alt="Innenansicht des Recording Studios Breakdown in Berlin"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <p class="featured-rating-pill"><span>★</span> 4.7</p>
+            <p class="featured-costs-per-hour-pill">25€/h</p>
+          </figure>
+          <p class="featured-location"><span class="featured-icon-location" aria-hidden="true">📍</span>London</p>
+          <h3 class="featured-headline">Cozy Crunch</h3>
+          <ul class="featured-pills">
+            <li>Sound Engineer Available</li>
+            <li>Technical Setup Help</li>
+            <li>Creative Coaching</li>
+            <li>Multi-Track Recording</li>
+            <li>Beat Production</li>
+          </ul>
+          <a class="featured-studio-btn" href="#">View Studio</a>
+        </article>
+       </div>
+
+    </section>
+    <section class="testimonials"></section>
     <footer></footer>
     <script src="script.js"></script>
   </body>

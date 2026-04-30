@@ -5,6 +5,7 @@
             #daf6ed,
             #f0f9f9);
     padding: clamp(1rem, 5vw, 5rem);
+    border-radius: 16px;
 }
 
 .wording {
