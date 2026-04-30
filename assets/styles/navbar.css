@@ -1,4 +1,14 @@
 /* NAVIGATION */
+
+/* TODO: Fixing the sticky header */
+
+/* STICKY HEADER */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
 #brand-header {
     width: 3rem;
 }
