@@ -35,8 +35,9 @@
 
 .featured-container {
     display: flex;
-    justify-content: center;
-    gap: 1rem;
+    justify-content: space-evenly;
+    gap: 8rem;
+    margin: 0 4rem;
     margin-top: var(--space-8);
 }
 
@@ -59,7 +60,7 @@
 
 .studio-card__image img {
     width: 100%;
-    height: auto;
+    height: 300px;
     display: block;
     object-fit: cover;
     border-radius: 16px 16px 0px 0px;
@@ -157,12 +158,19 @@
     background-color: var(--primary-hover);
 }
 
-@media (max-width: 768px) {
-    .featured-studios {
+@media (max-width: 1040px) {
+    .featured-container {
         margin: 2rem 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        border: 1px solid blue;
+    }
+
+
+
+    .featured-card {
+        max-width: 100%;
+        margin: 1rem 0;
     }
 
     .featured-rating-pill,

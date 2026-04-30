@@ -50,8 +50,10 @@
 .step-flex {
     display: flex;
     justify-content: center;
+    margin: 0 4rem;
     margin-top: var(--space-8);
-    gap: 1rem;
+    gap: 8rem;
+
 }
 
 /* STEP INDICATOR BLOCKS */
