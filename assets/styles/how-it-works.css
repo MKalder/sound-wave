@@ -64,7 +64,7 @@
     -webkit-box-shadow: 8px 5px 16px -3px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 8px 5px 16px -3px rgba(0, 0, 0, 0.35);
     border: 1px solid green;
-    max-width: 500px;
+    max-width: var(--space-lg);
 }
 
 .step-number {
