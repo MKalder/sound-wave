@@ -158,15 +158,13 @@
     background-color: var(--primary-hover);
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1100px) {
     .featured-container {
         margin: 2rem 1rem;
         display: flex;
         flex-direction: column;
-        border: 1px solid blue;
+        gap: 1rem;
     }
-
-
 
     .featured-card {
         max-width: 100%;
