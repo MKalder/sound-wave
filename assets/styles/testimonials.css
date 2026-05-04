@@ -60,7 +60,7 @@
 }
 
 .block-stats h4,
-p {
+.block-stats p {
     margin: 0;
     padding: 0;
 }
@@ -87,13 +87,13 @@ p {
     padding: 2.5rem 1rem;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
 
 }
 
 .review-post {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     padding: 2.5rem 1rem;
@@ -107,15 +107,15 @@ p {
     font-size: 0.675rem;
 }
 
-.review-post>.review-statement {
+.review-statement {
     padding: 1rem 0;
     font-size: 1.25rem;
 }
 
+/* TODO make it sticky on the bottom */
 .pill-review {
     display: inline-block;
     margin-right: auto;
-    margin-bottom: 1rem;
     font-size: 0.675rem;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -149,4 +149,13 @@ p {
     font-size: var(--text-xs);
     color: var(--color-text-muted);
     margin-top: 2px;
+}
+
+
+@media (max-width: 800px) {
+    .review {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
 }
