@@ -39,8 +39,6 @@
 
     display: flex;
     justify-content: space-evenly;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; */
 
     border: 1px solid green;
     border-radius: 16px;
@@ -88,7 +86,7 @@
     align-items: stretch;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 2.5rem;
 
 }
