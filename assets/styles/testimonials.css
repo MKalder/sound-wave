@@ -49,7 +49,7 @@
     flex-wrap: wrap;
 }
 
-.block {
+.block-stats {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,22 +57,22 @@
     padding: 1rem;
 }
 
-.block h4,
+.block-stats h4,
 p {
     margin: 0;
     padding: 0;
 }
 
-.block h4 {
+.block-stats h4 {
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-.block h4>span {
+.block-stats h4>span {
     color: var(--color-primary);
 }
 
-.block p {
+.block-stats p {
     color: var(--color-text-muted);
     font-size: 0.875rem;
     font-weight: 500;
