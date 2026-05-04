@@ -1,0 +1,28 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.close-modal-btn {
+    display: block;
+    margin-left: auto;
+}
