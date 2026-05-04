@@ -16,6 +16,38 @@ Based on this idea, I started building the following website.
 
 The goal of this project is to practice frontend development while building a real-world inspired platform concept.
 
+## Page Structure
+
+The landing page follows a clear conversion-driven structure:
+
+### Navigation
+
+Provides structure and orientation across the platform.
+
+### Hero Section
+
+Delivers emotional impact and introduces the core value proposition with a strong call-to-action.
+
+### How It Works
+
+Explains the booking process and reduces user uncertainty.
+
+### Featured Studios
+
+Showcases available studios and builds social proof through real offerings.
+
+### Testimonials
+
+Builds trust through real user experiences and feedback.
+
+### FAQs
+
+Removes remaining doubts and answers common user questions.
+
+### Footer
+
+Provides final navigation, legal information, and additional orientation.
+
 ## Live Demo
 
 comming soon...

@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="./assets/styles/hero.css" />
     <link rel="stylesheet" href="./assets/styles/how-it-works.css" />
     <link rel="stylesheet" href="./assets/styles/featured-studios.css"/>
+    <link rel="stylesheet" href="./assets/styles/testimonials.css"/>
   </head>
   <body>
+     <!-- OVERLAY -->
+    <div class="overlay"></div>
     <header>
       <!-- NAVIGATION BAR -->
       <div class="header-nav">
@@ -21,22 +24,23 @@
         />
         </a>
         <nav class="navigation">
+          <button id="close-btn" class="mobile-only">&times;</button>
           <ul class="menu">
-            <li class="mobile-only"><a href="#">
+            <li class="mobile-only"><a href="">
               <svg class="login-icon" viewBox="0 0 24 24" width="24">
                 <path
                 d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" fill="black"/>
               </svg>
               </a>
             </li>
-            <li><a href="#">Studios</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="">Studios</a></li>
+            <li><a href="">Explore</a></li>
+            <li><a href="">Community</a></li>
+            <li><a href="">Pricing</a></li>
+            <li><a href="">About</a></li>
           </ul>
         </nav>
-        <a class="login desktop-only" href="#">
+        <a class="login desktop-only" href="">
 
   <svg class="login-icon" viewBox="0 0 24 24" width="24">
     <path
@@ -47,18 +51,7 @@
       </a>
         <div class="cta-book">
           <a href="#" class="btn-primary">
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              stroke-width="2.5"
-              aria-hidden="true"
-            >
-              <circle cx="8" cy="18" r="4" />
-              <path d="M12 18V2l7 4" />
-            </svg>
+            <img class="note-icon" src="assets/svg/note.svg" alt="" />
           </a>
         </div>
          <!-- BURGER MENU-->
@@ -69,8 +62,6 @@
         </button>
       </div>
     </header>
-    <!-- OVERLAY -->
-    <div class="overlay"></div>
     <!-- HERO -->
     <section class="hero">
       <div class="wording">
@@ -316,10 +307,108 @@
           <a class="featured-studio-btn" href="#">View Studio</a>
         </article>
        </div>
-
     </section>
-    <section class="testimonials"></section>
+    <section class="testimonials">
+      <span class="pill">What Artists say</span>
+      <h2>Real sesssions, <span>real stories</span></h2>
+      <p>Over 2.400 artists have found their perfect studion on Sound Wave.</p>
+      <article class="stats">
+        <div class="block-stats">
+          <h4 class="stat-num"><span>4.9</span> / 5</h4>
+        <p class="stat-description">Average Rating</p>
+        </div>
+        <div class="block-stats">
+          <h4 class="stat-num"><span>2.400</span>+</h4>
+          <p class="stat-description">Artists Booked</p>
+        </div>
+        <div class="block-stats">
+          <h4 class="stat-num"><span>340</span>+</h4>
+          <p class="stat-description">Studios Worldwide</p>
+        </div>
+        <div class="block-stats">
+          <h4 class="stat-num"><span>98</span>%</h4>
+          <p class="stat-description">Would Book Again</p>
+        </div>
+      </article>
+      <!-- TODO -->
+      <section class="review">
+        <article class="review-post top">
+          <div class="stars">
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">5/5</span>
+          </div>
+          <p class="review-statement">"I've been touring for six years and finding a quality studio in a new city always meant days of cold emails and crossed fingers. Sound Wave changed that completely. I found a world-class vocal booth in Berlin in under ten minutes, walked in the same afternoon, and walked out with three finished tracks."</p>
+          <p class="pill-review">Booked: Cozy Crunch - 📍 London</p>
+          <div class="author">
+            <img src="https://i.pravatar.cc/80?img=47" alt="Portrait of Aisha Torres" class="avatar" width="48" height="48" loading="lazy">
+            <div class="author-info">
+              <div class="author-name">Aisha Torres</div>
+              <div class="author-role">Singer-Songwriter · London</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-post under">
+          <div class="stars">
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">4/5</span>
+          </div>
+          <p class="review-statement">"The filter for analog gear is a lifesaver. Found a studio with a Neve console and proper outboard compression in Tokyo — exactly what I needed for my EP. Transparent pricing, zero surprises."</p>
+          <p class="pill-review">Booked: Analog Room - 📍 Tokyo</p>
+          <div class="author">
+            <img src="https://i.pravatar.cc/80?img=12" alt="Portrait of DJ Kaito" class="avatar" width="48" height="48" loading="lazy">
+            <div class="author-info">
+              <div class="author-name">DJ Kaito</div>
+              <div class="author-role">DJ & Producer · New York</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-post under">
+          <div class="stars">
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">4/5</span>
+          </div>
+          <p class="review-statement">"As an independent producer I can't afford to waste a session on a bad room. Sound Wave's reviews are honest and detailed — equipment lists, room sizes, even acoustics notes. Booked three times, never disappointed."</p>
+          <p class="pill-review">Booked: Plan A - 📍 Los Angeles</p>
+          <div class="author">
+            <img src="https://i.pravatar.cc/80?img=68" alt="Portrait of Marcus Webb" class="avatar" width="48" height="48" loading="lazy">
+            <div class="author-info">
+              <div class="author-name">Marcus Webb</div>
+              <div class="author-role">Producer · Berlin</div>
+            </div>
+          </div>
+        </article>
+        <article class="review-post under">
+          <div class="stars">
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">⭐️</span>
+            <span class="star">4/5</span>
+          </div>
+          <p class="review-statement">"I once wasted an entire afternoon in a booth that turned every vocal into a cardboard box. Never again. Sound Wave's reviews don't just show you pretty pictures — they tell you how the room actually sounds. That's everything when your voice is your instrument"</p>
+          <p class="pill-review">Booked: Club House - 📍 Bangkok</p>
+          <div class="author">
+            <img src="https://i.pravatar.cc/80?img=18" alt="Portrait of Rubin Rackz" class="avatar" width="48" height="48" loading="lazy">
+            <div class="author-info">
+              <div class="author-name">Rubin Rackz</div>
+              <div class="author-role">Singer& Songwriter · Bangkok</div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
     <footer></footer>
-    <script src="script.js"></script>
+    <script src="./assets/js/carousel.js"></script>
+    <script src="./assets/js/burger.js"></script>
   </body>
 </html>
