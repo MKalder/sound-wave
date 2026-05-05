@@ -2,6 +2,7 @@ const openModal = document.querySelectorAll(".openModal");
 const overlay = document.querySelector(".overlay");
 const closeModal = document.getElementById("close-modal-btn");
 
+//For a single button only
 // openModal.addEventListener("click", (event) => {
 //     event.preventDefault();
 //     overlay.classList.remove("hidden");
@@ -10,7 +11,6 @@ const closeModal = document.getElementById("close-modal-btn");
 openModal.forEach((link) => {
     link.addEventListener("click", (event) => {
         event.preventDefault();
-        console.log("Modal öffnen");
         overlay.classList.remove("hidden");
     });
 });
