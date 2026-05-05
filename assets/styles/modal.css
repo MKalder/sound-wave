@@ -16,6 +16,8 @@
     display: none;
 }
 
+/* TODO Styling the Modal */
+
 .modal {
     display: flex;
     flex-direction: column;
