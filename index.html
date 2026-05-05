@@ -14,7 +14,13 @@
   </head>
   <body>
      <!-- OVERLAY -->
-    <div class="overlay"></div>
+    <div class="overlay hidden">
+      <div class="modal">
+        <button id="close-modal-btn">&times;</button>
+        <h2>Not implemented yet</h2>
+        <p>But if you want, you can fork this project and add the missing parts</p>
+      </div>
+    </div>
     <header>
       <!-- NAVIGATION BAR -->
       <div class="header-nav">
@@ -27,21 +33,21 @@
         <nav class="navigation">
           <button id="close-btn" class="mobile-only">&times;</button>
           <ul class="menu">
-            <li class="mobile-only"><a href="">
+            <li class="mobile-only"><a href="#" class="openModal">
               <svg class="login-icon" viewBox="0 0 24 24" width="24">
                 <path
                 d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z" fill="black"/>
               </svg>
               </a>
             </li>
-            <li><a href="">Studios</a></li>
-            <li><a href="">Explore</a></li>
-            <li><a href="">Community</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#" class="openModal">Studios</a></li>
+            <li><a href="#" class="openModal">Explore</a></li>
+            <li><a href="#" class="openModal">Community</a></li>
+            <li><a href="#" class="openModal">Pricing</a></li>
+            <li><a href="#" class="openModal">About</a></li>
           </ul>
         </nav>
-        <a class="login desktop-only" href="">
+        <a class="login desktop-only openModal" href="#">
 
   <svg class="login-icon" viewBox="0 0 24 24" width="24">
     <path
@@ -51,7 +57,7 @@
   </svg>
       </a>
         <div class="cta-book">
-          <a href="#" class="btn-primary">
+          <a href="#" class="btn-primary openModal">
             <img class="note-icon" src="assets/svg/note.svg" alt="" />
           </a>
         </div>
@@ -80,7 +86,7 @@
         </div> -->
         <div class="section-cta">
           <p>Ready for your next hit?</p>
-          <a href="#" class="hero-btn-primary">
+          <a href="#" class="hero-btn-primary openModal">
             <svg
               width="16"
               height="16"
@@ -257,7 +263,7 @@
             <li>Soundproof</li>
             <li>Live Room</li>
           </ul>
-          <a class="featured-studio-btn" href="#">View Studio</a>
+          <a class="featured-studio-btn openModal" href="#">View Studio</a>
         </article>
         <!-- SECOND CARD -->
         <article class="featured-card featured-card--secondary">
@@ -281,7 +287,7 @@
             <li>Multi-Track Recording</li>
             <li>Mastering Assistance</li>
           </ul>
-          <a class="featured-studio-btn" href="#">View Studio</a>
+          <a class="featured-studio-btn openModal" href="#">View Studio</a>
         </article>
         <!-- THIRD CARD -->
         <article class="featured-card featured-card--third">
@@ -305,7 +311,7 @@
             <li>Multi-Track Recording</li>
             <li>Beat Production</li>
           </ul>
-          <a class="featured-studio-btn" href="#">View Studio</a>
+          <a class="featured-studio-btn openModal" href="#">View Studio</a>
         </article>
        </div>
     </section>
@@ -407,13 +413,6 @@
         </article>
       </section>
     </section>
-    <div class="overlay hidden">
-      <div cass="modal">
-        <button class="close-modal-btn">&times;</button>
-        <h2>Not implemented yet</h2>
-        <p>But if you want, you can fork this project and add the missing parts</p>
-      </div>
-    </modal>
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/burger.js"></script>
     <script src="./assets/js/modal.js"></script>
